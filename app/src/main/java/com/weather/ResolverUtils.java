@@ -68,15 +68,17 @@ public class ResolverUtils {
         return false ;
     }
     /**
-     * 解析市
+     * 解析县
      * @param response
      * @param cityId
      * @return
      */
     public static boolean ResolverCounty(String response, int cityId) {
+        Log.e("yzx", response);
         if (!TextUtils.isEmpty(response)) {
             try {
                 JSONArray jsonArray = new JSONArray(response);
+
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonObject = jsonArray.getJSONObject(i);
                     County county = new County();
