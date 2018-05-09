@@ -21,13 +21,13 @@ public class WeatherBean {
 
     public static class HeWeatherBean {
         /**
-         * basic : {"cid":"CN101210503","location":"上虞","parent_city":"绍兴","admin_area":"浙江","cnty":"中国","lat":"30.01676941","lon":"120.87418365","tz":"+8.00","city":"上虞","id":"CN101210503","update":{"loc":"2018-05-07 10:47","utc":"2018-05-07 02:47"}}
-         * update : {"loc":"2018-05-07 10:47","utc":"2018-05-07 02:47"}
+         * basic : {"cid":"CN101100803","location":"稷山","parent_city":"运城","admin_area":"山西","cnty":"中国","lat":"35.60041046","lon":"110.97899628","tz":"+8.00","city":"稷山","id":"CN101100803","update":{"loc":"2018-05-09 08:47","utc":"2018-05-09 00:47"}}
+         * update : {"loc":"2018-05-09 08:47","utc":"2018-05-09 00:47"}
          * status : ok
-         * now : {"cloud":"50","cond_code":"104","cond_txt":"阴","fl":"21","hum":"87","pcpn":"0.0","pres":"1007","tmp":"20","vis":"10","wind_deg":"357","wind_dir":"北风","wind_sc":"2","wind_spd":"8","cond":{"code":"104","txt":"阴"}}
-         * daily_forecast : [{"date":"2018-05-07","cond":{"txt_d":"阴"},"tmp":{"max":"22","min":"16"}},{"date":"2018-05-08","cond":{"txt_d":"晴"},"tmp":{"max":"24","min":"12"}},{"date":"2018-05-09","cond":{"txt_d":"晴"},"tmp":{"max":"24","min":"12"}}]
-         * aqi : {"city":{"aqi":"43","pm25":"28","qlty":"优"}}
-         * suggestion : {"comf":{"type":"comf","brf":"舒适","txt":"白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。"},"sport":{"type":"sport","brf":"较适宜","txt":"阴天，较适宜进行各种户内外运动。"},"cw":{"type":"cw","brf":"较适宜","txt":"较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"}}
+         * now : {"cloud":"6","cond_code":"101","cond_txt":"多云","fl":"18","hum":"49","pcpn":"0.0","pres":"1018","tmp":"20","vis":"20","wind_deg":"94","wind_dir":"东风","wind_sc":"3","wind_spd":"12","cond":{"code":"101","txt":"多云"}}
+         * daily_forecast : [{"date":"2018-05-09","cond":{"txt_d":"阴"},"tmp":{"max":"26","min":"14"}},{"date":"2018-05-10","cond":{"txt_d":"小雨"},"tmp":{"max":"23","min":"15"}},{"date":"2018-05-11","cond":{"txt_d":"小雨"},"tmp":{"max":"21","min":"14"}}]
+         * aqi : {"city":{"aqi":"99","pm25":"74","qlty":"良"}}
+         * suggestion : {"comf":{"type":"comf","brf":"舒适","txt":"白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。"},"sport":{"type":"sport","brf":"较不宜","txt":"有降水，且风力较强，气压较低，推荐您在室内进行低强度运动；若坚持户外运动，须注意避雨防风。"},"cw":{"type":"cw","brf":"不宜","txt":"不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。"}}
          */
 
         private BasicBean basic;
@@ -96,17 +96,17 @@ public class WeatherBean {
 
         public static class BasicBean {
             /**
-             * cid : CN101210503
-             * location : 上虞
-             * parent_city : 绍兴
-             * admin_area : 浙江
+             * cid : CN101100803
+             * location : 稷山
+             * parent_city : 运城
+             * admin_area : 山西
              * cnty : 中国
-             * lat : 30.01676941
-             * lon : 120.87418365
+             * lat : 35.60041046
+             * lon : 110.97899628
              * tz : +8.00
-             * city : 上虞
-             * id : CN101210503
-             * update : {"loc":"2018-05-07 10:47","utc":"2018-05-07 02:47"}
+             * city : 稷山
+             * id : CN101100803
+             * update : {"loc":"2018-05-09 08:47","utc":"2018-05-09 00:47"}
              */
 
             private String cid;
@@ -211,8 +211,8 @@ public class WeatherBean {
 
             public static class UpdateBean {
                 /**
-                 * loc : 2018-05-07 10:47
-                 * utc : 2018-05-07 02:47
+                 * loc : 2018-05-09 08:47
+                 * utc : 2018-05-09 00:47
                  */
 
                 private String loc;
@@ -238,8 +238,8 @@ public class WeatherBean {
 
         public static class UpdateBeanX {
             /**
-             * loc : 2018-05-07 10:47
-             * utc : 2018-05-07 02:47
+             * loc : 2018-05-09 08:47
+             * utc : 2018-05-09 00:47
              */
 
             private String loc;
@@ -264,20 +264,20 @@ public class WeatherBean {
 
         public static class NowBean {
             /**
-             * cloud : 50
-             * cond_code : 104
-             * cond_txt : 阴
-             * fl : 21
-             * hum : 87
+             * cloud : 6
+             * cond_code : 101
+             * cond_txt : 多云
+             * fl : 18
+             * hum : 49
              * pcpn : 0.0
-             * pres : 1007
+             * pres : 1018
              * tmp : 20
-             * vis : 10
-             * wind_deg : 357
-             * wind_dir : 北风
-             * wind_sc : 2
-             * wind_spd : 8
-             * cond : {"code":"104","txt":"阴"}
+             * vis : 20
+             * wind_deg : 94
+             * wind_dir : 东风
+             * wind_sc : 3
+             * wind_spd : 12
+             * cond : {"code":"101","txt":"多云"}
              */
 
             private String cloud;
@@ -409,8 +409,8 @@ public class WeatherBean {
 
             public static class CondBean {
                 /**
-                 * code : 104
-                 * txt : 阴
+                 * code : 101
+                 * txt : 多云
                  */
 
                 private String code;
@@ -436,7 +436,7 @@ public class WeatherBean {
 
         public static class AqiBean {
             /**
-             * city : {"aqi":"43","pm25":"28","qlty":"优"}
+             * city : {"aqi":"99","pm25":"74","qlty":"良"}
              */
 
             private CityBean city;
@@ -451,9 +451,9 @@ public class WeatherBean {
 
             public static class CityBean {
                 /**
-                 * aqi : 43
-                 * pm25 : 28
-                 * qlty : 优
+                 * aqi : 99
+                 * pm25 : 74
+                 * qlty : 良
                  */
 
                 private String aqi;
@@ -489,8 +489,8 @@ public class WeatherBean {
         public static class SuggestionBean {
             /**
              * comf : {"type":"comf","brf":"舒适","txt":"白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。"}
-             * sport : {"type":"sport","brf":"较适宜","txt":"阴天，较适宜进行各种户内外运动。"}
-             * cw : {"type":"cw","brf":"较适宜","txt":"较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"}
+             * sport : {"type":"sport","brf":"较不宜","txt":"有降水，且风力较强，气压较低，推荐您在室内进行低强度运动；若坚持户外运动，须注意避雨防风。"}
+             * cw : {"type":"cw","brf":"不宜","txt":"不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。"}
              */
 
             private ComfBean comf;
@@ -560,8 +560,8 @@ public class WeatherBean {
             public static class SportBean {
                 /**
                  * type : sport
-                 * brf : 较适宜
-                 * txt : 阴天，较适宜进行各种户内外运动。
+                 * brf : 较不宜
+                 * txt : 有降水，且风力较强，气压较低，推荐您在室内进行低强度运动；若坚持户外运动，须注意避雨防风。
                  */
 
                 private String type;
@@ -596,8 +596,8 @@ public class WeatherBean {
             public static class CwBean {
                 /**
                  * type : cw
-                 * brf : 较适宜
-                 * txt : 较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。
+                 * brf : 不宜
+                 * txt : 不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。
                  */
 
                 private String type;
@@ -632,9 +632,9 @@ public class WeatherBean {
 
         public static class DailyForecastBean {
             /**
-             * date : 2018-05-07
+             * date : 2018-05-09
              * cond : {"txt_d":"阴"}
-             * tmp : {"max":"22","min":"16"}
+             * tmp : {"max":"26","min":"14"}
              */
 
             private String date;
@@ -683,8 +683,8 @@ public class WeatherBean {
 
             public static class TmpBean {
                 /**
-                 * max : 22
-                 * min : 16
+                 * max : 26
+                 * min : 14
                  */
 
                 private String max;

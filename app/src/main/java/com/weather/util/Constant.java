@@ -1,4 +1,4 @@
-package com.weather;
+package com.weather.util;
 
 /**
  * Created by yuan.zhen.xing on 2018-05-04.

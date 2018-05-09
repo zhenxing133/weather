@@ -3,8 +3,8 @@
     <dbname value="lytech_weather" ></dbname>
     <version value="1" ></version>
     <list>
-        <mapping class="com.weather.sql.Province"></mapping>
-        <mapping class="com.weather.sql.City"></mapping>
-        <mapping class="com.weather.sql.County"></mapping>
+        <mapping class="com.weather.db.Province"></mapping>
+        <mapping class="com.weather.db.City"></mapping>
+        <mapping class="com.weather.db.County"></mapping>
     </list>
 </litepal>

@@ -1,4 +1,4 @@
-package com.weather;
+package com.weather.httpRequest;
 
 import android.os.Handler;
 import android.os.Looper;

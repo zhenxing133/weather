@@ -1,16 +1,17 @@
-package com.weather;
+package com.weather.util;
 
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.weather.sql.City;
-import com.weather.sql.County;
-import com.weather.sql.Province;
+import com.weather.db.City;
+import com.weather.db.County;
+import com.weather.db.Province;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 
 /**
  * Created by yuan.zhen.xing on 2018-05-04.
@@ -23,7 +24,6 @@ public class ResolverUtils {
      * @return
      */
     public static boolean ResolverProvinces(String response) {
-
         if (!TextUtils.isEmpty(response)) {
             try {
                 JSONArray jsonArray = new JSONArray(response);
@@ -74,7 +74,7 @@ public class ResolverUtils {
      * @return
      */
     public static boolean ResolverCounty(String response, int cityId) {
-        Log.e("yzx", response);
+        Log.e("yzx", "county==="+response);
         if (!TextUtils.isEmpty(response)) {
             try {
                 JSONArray jsonArray = new JSONArray(response);
